@@ -1,0 +1,11 @@
+@import 'partials/variables'; 
+@import 'partials/normalize';
+@import 'partials/_mixins.scss';
+@import 'partials/_common.scss';
+@import 'partials/_header.scss';
+@import 'partials/_main.scss';
+@import 'partials/_footer.scss';
+
+body{
+    font-size: nth($sz, 3);
+}
