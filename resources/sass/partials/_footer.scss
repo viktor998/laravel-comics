@@ -1,0 +1,50 @@
+.bg_img{
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    .logo{
+        position: absolute;
+        top: -50px;
+        right: 20px;
+    }
+    background: url('/images/footer-bg.jpg');
+    background-size: cover;
+    .links{
+        display: flex;
+        h1{
+            text-transform: uppercase;
+            color: $white;
+            padding: nth($sz, 3) 0;
+        }
+
+        ul{
+            list-style: none;
+            li{
+                a{
+                    line-height: 2;
+                    text-decoration: none;
+                    color: rgba(255, 255, 255, 0.568);
+
+                    &:hover{
+                        color: $blue;
+                    }
+                }
+            }
+        }
+
+        .col-2, .col-3{
+            margin-left: nth($sz, 12);
+        }
+    }
+
+    .rights{
+        width: 45%;
+        color: rgba(255, 255, 255, 0.568);
+        a{
+            
+            text-decoration: none;
+            color: $blue;
+
+            
+        }
+    }
+}

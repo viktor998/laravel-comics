@@ -1489,6 +1489,49 @@ main .bg_blue_2 .container .in-4 img {
   height: 50px;
 }
 
+.bg_img {
+  position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  background: url("/images/footer-bg.jpg");
+  background-size: cover;
+}
+.bg_img .logo {
+  position: absolute;
+  top: -50px;
+  right: 20px;
+}
+.bg_img .links {
+  display: flex;
+}
+.bg_img .links h1 {
+  text-transform: uppercase;
+  color: white;
+  padding: 0.75em 0;
+}
+.bg_img .links ul {
+  list-style: none;
+}
+.bg_img .links ul li a {
+  line-height: 2;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.568);
+}
+.bg_img .links ul li a:hover {
+  color: #0282f9;
+}
+.bg_img .links .col-2, .bg_img .links .col-3 {
+  margin-left: 3em;
+}
+.bg_img .rights {
+  width: 45%;
+  color: rgba(255, 255, 255, 0.568);
+}
+.bg_img .rights a {
+  text-decoration: none;
+  color: #0282f9;
+}
+
 body {
   font-size: 0.75em;
   overflow-x: hidden;
