@@ -1546,7 +1546,7 @@ main .bg_blue_2 .container .in-4 img {
 }
 .bg-grey-footer input {
   background: transparent;
-  border: 2px solid blue;
+  border: 2px solid #0282f9;
   color: white;
   font-weight: bold;
   padding: 0.75em 1.25em;

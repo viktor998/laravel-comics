@@ -10,7 +10,7 @@
                 @foreach($comics as $index => $comic)
                     <div class="comic">
                         
-                            <a href="{{route('page', ['id' => $index])}}">
+                            <a href="{{route('comic', ['id' => $index])}}">
                                 <div href='/home' style="background-image: url({{ $comic['thumb']}});" class="comic-thumb"></div>
                             
                             </a>

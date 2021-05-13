@@ -11,7 +11,7 @@
         </div>
         <ul>
             <li><a href="/">characters</a></li>
-            <li><a class='active' href="/comics">comics</a></li>
+            <li><a class="{{Route::currentRouteName() == 'comics' ? 'active': ''}}" href="/comics">comics</a></li>
             <li><a href="/">movies</a></li>
             <li><a href="/">tv</a></li>
             <li><a href="/">games</a></li>
