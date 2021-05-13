@@ -61,10 +61,61 @@ main{
                         }
                     }
                 }
+
+                .button{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    input.btn{
+                        padding: nth($sz, 2) nth($sz, 12);
+                        background-color: $blue;
+                        color: $white;
+                        border: 0;
+                        &:hover{
+                            cursor:pointer;
+                        }
+                    }
+                }
             }
         }
 
+        .bg_blue_2{
+            background-color: $blue;
+            
+            .container{
+                .in{
+                    width: 100%;
+                    @include flex-between-center;
+                    
+                    @for $i from 0 through 4{
+                        
+                        &-#{$i}{
+                            padding: nth($sz, 5) nth($sz, 6);
+                            
+                            @include flex-center-center;
+
         
+
+                            
+                            span{
+                                margin-left: nth($sz, 2);
+                                text-transform: uppercase;
+                                font-weight: bold;
+                                color: white;
+                            }
+                            
+                            img{
+                                height: 50px;
+                            }
+        
+                           
+                           
+                         }
+                         
+                    } 
+                }
+            }
+        }   
 
     
 }

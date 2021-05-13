@@ -8,7 +8,7 @@ main{
             height: 220px;
             position: absolute;
             bottom: 10px;
-            left: 15%;
+            left: 9%;
         }
     }
 
@@ -18,10 +18,151 @@ main{
             text-transform: uppercase;
         }
 
-        .content{
-            display:flex;
+        .content{ 
+            display: flex;
+            justify-content: space-around;
+            font-size: nth($sz, 5);
+            .title{
+                color: $blue_text;
+            }
+
+            .price_available{
+                border-bottom: 1px solid rgba(0, 0, 0, 0.253);
+                height: 50px;
+                padding-right:nth($sz, 3);
+                background: $green;
+                color: $white;
+                @include flex-between-center;
+
+                p.avv{
+                    margin-left: auto;
+                    justify-self: right;
+                    padding-right: nth($sz, 8);
+                }
+
+                h4{
+                    height: 100%;
+                    line-height: 50px;
+                    padding:0  nth($sz, 8);
+                    border-left: 1px solid rgba(0, 0, 0, 0.253);
+                    
+                }
+            }
+
+            .description{
+                line-height: 2;
+                color: $dark_grey;
+            }
         }
 
+        .talent-specs{
+            border-top: 1px solid rgba(0, 0, 0, 0.253);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.253);
+            width: 100vw;
+            background: $talent_bg;
+            & .container{
+                
+                display: flex;
+                justify-content: space-between;
+            }
+            .talent, .specs{
+                width: 45%
+            }
+
+            h1{
+                color: $blue_text;
+            }
+            .art-by, .written-by{
+                @include flex-between-center;
+                span{
+                    width: 30%;
+                    font-size: nth($sz, 5);
+                    color: $blue_text;
+                }
+                .artists{
+                    width: 70%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    color: $blue;
+                    font-size: nth($sz, 6);
+                }
+            }
+
+            .specs{
+                .series, .prices, .sale-date{
+                    display: flex;
+                    span{
+                        width: 30%;
+                        color: $blue_text;
+                        font-size: nth($sz, 5);
+                    }
+                    .serie, .price, .date{
+                        width: 70%;
+                    }
+                   
+                }
+
+                .series p{
+                    color: $blue;
+                }
+            }
+        }
+
+        
+
     }
+
+    .info-container{
+        width: 100%;
+        background-color: $talent_bg;
+    }
+
+    .info{
+            width: 100%;
+            @include flex-between-center;
+            
+            @for $i from 0 through 3{
+                
+                &-#{$i}{
+                    padding: nth($sz, 5) nth($sz, 6);
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    border-left: 1px solid rgba(0, 0, 0, 0.253);
+
+                    @if($i == 3){
+                        border-right: 1px solid rgba(0, 0, 0, 0.253);
+                    }
+                    .image-cut{
+                     width: 37px;
+                     height: 37px;
+                     overflow: hidden;
+                    }
+                    
+                    span{
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        color: rgba(0, 0, 0, 0.253);
+                    }
+                    
+                    img{
+                      margin: 0px (-37px * $i);  
+                    }
+
+                    &:hover{
+                        cursor: pointer;
+                        span{
+                            color: $blue;
+                            
+                        }
+                        img{
+                            margin-top: -37px;  
+                        }
+                    }
+                   
+                 }
+                 
+            } 
+        }
 
 }
