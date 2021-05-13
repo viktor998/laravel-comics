@@ -47,4 +47,39 @@
             
         }
     }
+
+
+}
+
+.bg-grey-footer{
+    height: 70px;
+    background-color: $bg-grey;
+    @include flex-center-center;
+    .container{
+        @include flex-between-center;
+    }
+
+    input{
+        background: transparent;
+        border: 2px solid blue;
+        color: $white;
+        font-weight: bold;
+        padding: nth($sz, 3) nth($sz, 5);
+    }
+
+    .social-links {
+        @include flex-between-center;
+        h1{
+            color: $blue;
+            margin-right: nth($sz, 5);
+        }
+        ul{
+            display: flex;
+            list-style: none;
+            
+            li{
+                padding: 0 nth($sz, 2);
+            }
+        }
+    }
 }

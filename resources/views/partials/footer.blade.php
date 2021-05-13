@@ -57,4 +57,20 @@
             </div>
         </div>
     </div>
+
+   <div class="bg-grey-footer">
+        <div class="container">
+            <input type="button" value="SIGN-UP NOW!">
+            <div class="social-links">
+                <h1>FOLLOW US</h1>
+                <ul>
+                    <li><a href="#"><img src="/images/footer-facebook.png" alt=""></a></li>
+                    <li><a href="#"><img src="/images/footer-twitter.png" alt=""></a></li>
+                    <li><a href="#"><img src="/images/footer-youtube.png" alt=""></a></li>
+                    <li><a href="#"><img src="/images/footer-pinterest.png" alt=""></a></li>
+                    <li><a href="#"><img src="/images/footer-periscope.png" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+   </div>
 </footer>

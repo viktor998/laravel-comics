@@ -1532,6 +1532,42 @@ main .bg_blue_2 .container .in-4 img {
   color: #0282f9;
 }
 
+.bg-grey-footer {
+  height: 70px;
+  background-color: #303030;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bg-grey-footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bg-grey-footer input {
+  background: transparent;
+  border: 2px solid blue;
+  color: white;
+  font-weight: bold;
+  padding: 0.75em 1.25em;
+}
+.bg-grey-footer .social-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bg-grey-footer .social-links h1 {
+  color: #0282f9;
+  margin-right: 1.25em;
+}
+.bg-grey-footer .social-links ul {
+  display: flex;
+  list-style: none;
+}
+.bg-grey-footer .social-links ul li {
+  padding: 0 0.5em;
+}
+
 body {
   font-size: 0.75em;
   overflow-x: hidden;
