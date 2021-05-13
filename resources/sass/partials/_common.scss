@@ -1,7 +1,12 @@
 
 .container{
-    width: 80%;
+    width: 82%;
     margin: 0 auto;
+
+
+    @include xl{
+        width: 58%;
+    }
 
 }
 

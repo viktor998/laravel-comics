@@ -1,0 +1,27 @@
+main{
+    .bg_blue{
+        width: 100vw;
+        height: 60px;
+        background-color: $blue;
+        position: relative;
+        img{
+            height: 220px;
+            position: absolute;
+            bottom: 10px;
+            left: 15%;
+        }
+    }
+
+    .comic_page{
+        @include flex-column-center-around;
+        .title{
+            text-transform: uppercase;
+        }
+
+        .content{
+            display:flex;
+        }
+
+    }
+
+}

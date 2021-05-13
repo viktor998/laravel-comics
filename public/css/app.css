@@ -6,8 +6,13 @@
 }
 
 .container {
-  width: 80%;
+  width: 82%;
   margin: 0 auto;
+}
+@media (min-width: 1400px) {
+  .container {
+    width: 58%;
+  }
 }
 
 .text-center {
@@ -553,6 +558,9 @@ header nav.container {
   justify-content: space-between;
   align-items: center;
 }
+header nav.container .logo img {
+  height: 70px;
+}
 header nav.container ul {
   display: flex;
   justify-content: space-between;
@@ -564,14 +572,14 @@ header nav.container ul li {
 header nav.container ul li a {
   text-decoration: none;
   text-transform: uppercase;
-  padding: 2px 1em;
+  margin: 2px 1em;
   font-weight: 700;
   color: black;
 }
 header nav.container ul li a.active {
   color: #0282f9;
-  padding-bottom: 5em;
-  border-bottom: 5px solid #0282f9;
+  padding-bottom: 3.5em;
+  border-bottom: 8px solid #0282f9;
 }
 header nav.container input {
   border: 0;
@@ -581,8 +589,93 @@ header .jumptron {
   height: 300px;
   background-size: cover;
   background-image: url("../images/jumbotron.jpg");
+  position: relative;
+}
+
+main .bg_blue {
+  width: 100vw;
+  height: 60px;
+  background-color: #0282f9;
+  position: relative;
+}
+main .bg_blue img {
+  height: 220px;
+  position: absolute;
+  bottom: 10px;
+  left: 15%;
+}
+main .comic_page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+main .comic_page .title {
+  text-transform: uppercase;
+}
+main .comic_page .content {
+  display: flex;
+}
+
+main h1.current-series {
+  position: absolute;
+  bottom: 200px;
+  background-color: #0282f9;
+  width: 240px;
+  margin: 0 4em;
+  padding: 0.25em 0.5em;
+  text-transform: uppercase;
+  color: white;
+}
+@media (min-width: 1400px) {
+  main h1.current-series {
+    bottom: 520px;
+    margin: 0 8em;
+  }
+}
+main .bg_black {
+  background-color: #1c1c1c;
+}
+main .bg_black .container {
+  padding: 2em 0;
+}
+main .bg_black .container .comics {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main .bg_black .container .comics .comic {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  width: 160px;
+  position: relative;
+}
+main .bg_black .container .comics .comic .comic-thumb {
+  height: 200px;
+  width: 100%;
+  background-size: cover;
+}
+main .bg_black .container .comics .comic a {
+  width: 100%;
+  height: 100%;
+}
+main .bg_black .container .comics .comic .comic-title {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  height: 10px;
+}
+main .bg_black .container .comics .comic .comic-title span {
+  color: white;
+  text-transform: uppercase;
 }
 
 body {
   font-size: 0.75em;
+  overflow-x: hidden;
 }

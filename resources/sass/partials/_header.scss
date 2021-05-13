@@ -6,6 +6,7 @@ header{
 
         .container{
             @include flex-end-center-around;
+            
             span{
                 color: $white;
                 text-transform: uppercase;
@@ -22,6 +23,12 @@ header{
     nav.container{
         padding: nth($sz, 6);
         @include flex-between-center;
+
+        .logo{
+            img{
+                height: 70px;
+            }
+        }
         
         ul{
             @include flex-between-center;
@@ -30,14 +37,14 @@ header{
                 a{
                     text-decoration: none;
                     text-transform: uppercase;
-                    padding: 2px nth($sz, 4);
+                    margin: 2px nth($sz, 4);
                     font-weight: 700;
                     color: black;
 
                     &.active{
                         color: $blue;
-                        padding-bottom: nth($sz, 20);
-                        border-bottom: 5px solid $blue;
+                        padding-bottom: nth($sz, 14);
+                        border-bottom: 8px solid $blue;
                         
                     }
                 }
@@ -54,5 +61,8 @@ header{
         height: 300px;
         background-size: cover;
         background-image: url('../images/jumbotron.jpg');
+        position: relative;
+
+        
     }
 }

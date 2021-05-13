@@ -7,11 +7,11 @@
     </div>
     <nav class='container'>
         <div class="logo">
-            <img src="images/dc-logo.png" alt="">
+            <img src="/images/dc-logo.png" alt="">
         </div>
         <ul>
             <li><a href="/">characters</a></li>
-            <li><a class='active' href="/">comics</a></li>
+            <li><a class='active' href="/comics">comics</a></li>
             <li><a href="/">movies</a></li>
             <li><a href="/">tv</a></li>
             <li><a href="/">games</a></li>
@@ -24,7 +24,5 @@
         <input type="text" name="search" class="search" placeholder='Search'>
     </nav>
 
-    <div class="jumptron">
-        
-    </div>
+    <div class="jumptron"></div>
 </header>

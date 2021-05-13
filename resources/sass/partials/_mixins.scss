@@ -48,3 +48,9 @@
     justify-content: flex-end;
     flex-wrap: wrap;
 }
+
+@mixin xl {
+    @media(min-width: 1400px) { 
+        @content;
+    }
+}
